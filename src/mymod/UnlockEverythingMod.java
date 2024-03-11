@@ -104,7 +104,7 @@ public class UnlockEverythingMod implements PostInitializeSubscriber {
 			if (pref.getInteger("WIN_COUNT", 0) == 0)
 				pref.putInteger("WIN_COUNT", 1);
 			pref.putInteger("ASCENSION_LEVEL", 20);
-	        pref.putInteger("LAST_ASCENSION_LEVEL", 20);
+			pref.putInteger("LAST_ASCENSION_LEVEL", 20);
 			pref.flush();
 		});
 		Stream.of("CROW", "DONUT", "WIZARD").forEach(UnlockTracker::markBossAsSeen);
@@ -118,7 +118,7 @@ public class UnlockEverythingMod implements PostInitializeSubscriber {
 				if (p.getInteger("WIN_COUNT", 0) == 0) {
 					p.putInteger("WIN_COUNT", 1);
 					p.putInteger("ASCENSION_LEVEL", 20);
-			        p.putInteger("LAST_ASCENSION_LEVEL", 20);
+					p.putInteger("LAST_ASCENSION_LEVEL", 20);
 					p.flush();
 				}
 			}
